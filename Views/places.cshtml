@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All Places</title>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <ul>
+      @foreach (var place in Model)
+      {
+        <li><a href='/places/@place.GetId()'>@place.GetCityName()</a></li>
+      }
+    </ul>
+    <a href='/places/new'>Add new place</a>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add a Place</title>
+  </head>
+  <body>
+    <h1>Places List</h1>
+    <h3>Add a new place:</h3>
+    <form action='/places' method='post'>
+      <label for='new-place'>Place Name</label>
+      <input id='new-place' name='new-place' type='text'>
+
+      <label for='picture'>Picture URL</label>
+      <input id='picture' name='picture' type='text'>
+
+      <label for='time-spent'>Time Spent</label>
+      <input id='time-spent' name='time-spent' type='text'>
+      <button type='submit'>Add Entry</button>
+    </form>
+  </body>
+</html>
